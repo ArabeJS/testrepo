@@ -1,0 +1,5 @@
+$$.analytics={send:function(cmd,c,a,l,v){try{var u='//a.apkpure.com/analytics/collect_v1007';u+='?cmd='+ cmd;if(c){u+='&c='+ c;}
+if(a){u+='&a='+ a;}
+if(l){u+='&l='+ l;}
+if(v){u+='&v='+ v;}
+u+='&hl='+(navigator.browserLanguage||navigator.language||navigator.userLanguage).toLowerCase();u+='&r='+ encodeURIComponent(document.referrer);u+='&k=1525908c819727fba13311c9e3754d705918d7c7';$.ajax({url:u,type:'GET',dataType:'jsonp',jsonp:'callback',success:function(data){}});}catch(e){}}};$$.analytics.send('pageview');
